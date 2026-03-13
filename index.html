@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> North Superior </title>| Air Testing And Rental</title>
+    <style>
+        /* Base Styles */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #18bc9c;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+
+        /* Navigation */
+        header {
+            background: white;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?auto=format&fit=crop&q=80') center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #128f76;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .bg-white {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 40px;
+            margin-top: -40px;
+            position: relative;
+        }
+
+        /* Grid for Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">North Superior <span>Air Testing And Rental</span></a>
+        <nav>
+            <a href="#story">Our Story</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Don't Miss The Mold.</h1>
+        <p>Dedicated Indoor Air Quality (IAQ) testing to ensure your home is the safe space it should be.</p>
+        <a href="#contact" class="btn">Get Your Air Tested</a>
+    </section>
+
+    <section id="story" class="bg-white">
+        <h2>How We Started</h2>
+        <p>North Superior Air Testing and Rental began with a simple realization: too many people were living in homes that were silently making them sick. We saw families struggling with unexplained allergies, fatigue, and respiratory issues, only to eventually discover hidden mold was the culprit.</p>
+        <p>We also noticed a fundamental flaw in the industry. Often, the companies testing for mold were the exact same companies charging thousands of dollars to fix it. We realized homeowners needed an unbiased, third-party advocate. That's where we come in. We don't do the fixing—our sole mission is to find the problem, provide certified lab results, and ensure the truth about your air quality is brought to light. We are entirely committed to providing you with a safe house space.</p>
+    </section>
+
+    <section id="services">
+        <h2 style="text-align: center;">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Initial IAQ Testing</h3>
+                <p>We conduct thorough indoor air quality assessments to identify mold spores, allergens, and other hidden airborne contaminants that could be impacting your health.</p>
+            </div>
+            <div class="service-card">
+                <h3>EMSL Certified Lab Analysis</h3>
+                <p>We don't guess. All of our air and surface samples are sent directly to EMSL Analytical, a highly trusted and certified laboratory, ensuring you receive accurate, legally defensible results.</p>
+            </div>
+            <div class="service-card">
+                <h3>Post-Remediation Verification</h3>
+                <p>Did the mold remediation company actually do their job? We offer independent clearance testing and contract verification to double-check their work, ensuring absolutely no mold residue is left behind before you move back into the space.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="text-align: center; background: white; padding-bottom: 80px;">
+        <h2>Ready to Breathe Easier?</h2>
+        <p>Contact us today to schedule your independent air quality test.</p>
+        <br>
+        <a href="mailto:Dylan@gmail.com" class="btn" style="font-size: 1.2rem; padding: 15px 40px;">Email: northsuperiorairtesting@gmail.com</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 North Superior Air Testing And Rental Specialists.</p>
+    </footer>
+
+</body>
+</html>
