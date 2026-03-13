@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> North Superior </title>| Air Testing And Rental</title>
+    <title>North Superior | Air Testing And Rental</title>
     <style>
         /* Base Styles */
         :root {
@@ -40,14 +40,33 @@
         }
 
         .logo {
+            /* Changed to Flexbox for vertical alignment and text lockup */
+            display: flex;
+            align-items: center;
             font-size: 1.5rem;
             font-weight: bold;
             color: var(--primary-color);
             text-decoration: none;
         }
 
+        /* Styling for the Logo Image */
+        .logo img {
+            height: 60px; /* Set the height for a good visual size */
+            width: auto;  /* Maintain aspect ratio */
+            margin-right: 15px; /* Space between logo and text */
+        }
+
+        /* Lockup text, keeping only "Rental" as a specific supportive descriptor */
+        .logo-text {
+            /* Hiding the redundant parts of the name to keep the lockup clean */
+            display: none; 
+        }
+
         .logo span {
+            /* Make "Rental" a smaller, secondary descriptor */
+            font-size: 1rem;
             color: var(--secondary-color);
+            margin-top: -5px; /* Fine-tune position if needed */
         }
 
         nav a {
@@ -141,7 +160,10 @@
 <body>
 
     <header>
-        <a href="#" class="logo">North Superior <span>Air Testing And Rental</span></a>
+        <a href="#" class="logo">
+            <img src="image_0.png" alt="North Superior Air Testing Logo">
+            <div class="logo-text">North Superior Air Testing And <span>Rental</span></div>
+        </a>
         <nav>
             <a href="#story">Our Story</a>
             <a href="#services">Services</a>
